@@ -42,6 +42,18 @@ they break mathematically, mutations that leave a true statement, decorative hyp
 tools that summarise their own output. It ends with what mutation controls cannot do at all, which
 is detect a vacuous statement.
 
+## A small Lean contribution
+
+`MultilinearBasisBound.lean` came out of the Zulip discussion on whether the Clay forcing-decay
+condition and its Lean encoding agree. It bounds the operator norm of a continuous multilinear map
+by its values on a spanning family whose coordinates are bounded by the norm, which is the direction
+of that comparison that is not just norm equivalence. Three declarations, `#print axioms` after each,
+all reporting only `propext`, `Classical.choice`, `Quot.sound`. mathlib has `opNorm_le_bound` and
+`le_opNorm` but, as far as I could find, nothing bounding an operator norm multilinearly from basis
+values; the closest are `Module.Basis.opNorm_le` (the linear case) and `Module.Basis.ext_multilinear`
+(no norms). One of the three lemmas turned out to duplicate `PiLp.norm_apply_le`, which I found only
+after proving it.
+
 ## Why these three and not the code
 
 The formalization is large and mostly the record of a superseded approach. Publishing it as a dump

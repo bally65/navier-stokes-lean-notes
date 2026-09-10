@@ -34,6 +34,16 @@ Clay 官方勘誤；信任基底裡沒有公理、沒有 `native_decide`、除�
 日誌騙過、控制檔在數學上壞掉之前就先在語法上壞掉、變異之後陳述仍然為真、裝飾性假設、
 以及會自己摘要輸出的 shell 工具。最後一節講變異控制根本做不到的事：偵測一條空洞的陳述。
 
+## 一小段 Lean 貢獻
+
+`MultilinearBasisBound.lean` 出自 Zulip 上關於 Clay 的外力衰減條件與其 Lean 編碼是否一致的討論。
+它把連續多線性映射的算子範數，用一族「座標被範數界住的張成向量」上的值界住——那正是該比較裡
+不只是範數等價的那個方向。三條宣告，每條後面都有 `#print axioms`，全部只回報
+`propext`、`Classical.choice`、`Quot.sound`。mathlib 有 `opNorm_le_bound` 與 `le_opNorm`，
+但就我所能找到的，沒有用基底值去界多線性算子範數的東西；最接近的是 `Module.Basis.opNorm_le`
+（線性情形）與 `Module.Basis.ext_multilinear`（沒有範數）。三條裡有一條後來發現重複了
+`PiLp.norm_apply_le`，而我是證完才發現的。
+
 ## 為什麼是這三份而不是程式碼
 
 形式化本體很大，而且大部分是一條已被取代的路線的紀錄。把它整包倒出來，沒有人能在十分鐘內評估它，
