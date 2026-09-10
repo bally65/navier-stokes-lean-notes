@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+title: >-
+  Notes from a Lean formalization of Navier-Stokes local regularity theory:
+  claim scope, an independent audit, a methods note, and one open statement
+type: software
+message: >-
+  If you refer to these notes, please cite them as below. Note the claim scope:
+  this work does not prove epsilon-regularity, partial regularity, or anything
+  bearing on the Clay Millennium Prize problem.
+authors:
+  - family-names: "Li"
+    given-names: "Wei-Ting"
+    alias: "bally65"
+    # affiliation: TO BE CONFIRMED BY THE AUTHOR
+    # orcid: TO BE CONFIRMED BY THE AUTHOR
+    # email: TO BE CONFIRMED BY THE AUTHOR
+version: "0.1.0"
+date-released: "2026-09-10"
+license: MIT
+# repository-code: TO BE CONFIRMED — set to the public repository URL before release
+abstract: >-
+  Four documents from an ongoing Lean 4 / mathlib formalization of local
+  regularity theory for the three-dimensional incompressible Navier-Stokes
+  equations. They comprise a claim scope, an independent audit of a third
+  party's public formalization, a methods note on gating machine-generated Lean
+  proofs, and one open Lean statement on which help is sought. The
+  formalization itself is not included.
+keywords:
+  - Lean 4
+  - mathlib
+  - Navier-Stokes equations
+  - partial regularity
+  - formal verification
+  - reproducibility
