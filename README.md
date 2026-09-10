@@ -1,5 +1,8 @@
 # Notes from a Lean formalization of Navier–Stokes local regularity theory
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22684542.svg)](https://doi.org/10.5281/zenodo.22684542)
+
+
 This repository contains four documents. It does not contain the formalization itself, which is not
 ready to publish. What is here is the part that stands on its own: an independent verification of
 someone else's public work, a methods note on gating AI-generated Lean, and one open Lean statement
@@ -46,6 +49,16 @@ would not let anyone evaluate it in ten minutes, and would invite exactly the ov
 claim scope is written to prevent. These three documents can be checked on their own terms: the
 audit by re-running its commands, the methods note against your own experience, and the open problem
 by anyone who knows the relevant mathlib.
+
+## Citing
+
+If you refer to these notes, cite the archived record:
+
+> Li, Wei-Ting (2026). *Notes from a Lean formalization of Navier–Stokes local regularity theory:
+> claim scope, an independent audit, a methods note, and one open statement*. Zenodo.
+> https://doi.org/10.5281/zenodo.22684542
+
+The DOI above resolves to the latest version. `CITATION.cff` carries the machine-readable form.
 
 ## Contact
 

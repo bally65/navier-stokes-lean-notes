@@ -1,5 +1,8 @@
 # 一份 Navier–Stokes 局部正則性 Lean 形式化的筆記
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22684542.svg)](https://doi.org/10.5281/zenodo.22684542)
+
+
 本倉庫收錄四份文件。它**不含**形式化本體，那部分還不到可以公開的程度。這裡放的是能夠獨立成立的
 部分：一份對他人公開成果的獨立驗證、一份關於如何為 AI 產生的 Lean 設閘門的方法筆記，
 以及一條我們卡住、希望有人指點的開放 Lean 陳述。
@@ -36,6 +39,16 @@ Clay 官方勘誤；信任基底裡沒有公理、沒有 `native_decide`、除�
 形式化本體很大，而且大部分是一條已被取代的路線的紀錄。把它整包倒出來，沒有人能在十分鐘內評估它，
 而且正好會招來宣稱範圍那一頁想要防止的過度解讀。這三份文件可以各自被檢查：稽核可以重跑它的指令，
 方法筆記可以對照讀者自己的經驗，開放問題則任何熟悉相關 mathlib 的人都能判斷。
+
+## 引用
+
+若要引用這份筆記，請引用封存紀錄：
+
+> Li, Wei-Ting (2026). *Notes from a Lean formalization of Navier–Stokes local regularity theory:
+> claim scope, an independent audit, a methods note, and one open statement*. Zenodo.
+> https://doi.org/10.5281/zenodo.22684542
+
+上面的 DOI 永遠指向最新版本。`CITATION.cff` 裡有機器可讀的版本。
 
 ## 聯絡
 
