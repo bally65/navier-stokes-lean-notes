@@ -16,9 +16,14 @@ whose only exhibited inhabitant is the zero solution.
 
 ## What is proved
 
-Every item below is machine-checked, and every declaration in the repository is followed by
-`#print axioms`. Where a statement is conditional, the condition is a named hypothesis in the
-statement itself, not an assumption buried in prose.
+Every item below is machine-checked. Where a statement is conditional, the condition is a named
+hypothesis in the statement itself, not an assumption buried in prose.
+
+**Axiom receipts are partial, and here are the numbers.** Recent units carry a `#print axioms`
+line after every declaration; older material does not. Measured on the tracked tree: of 3456 brick
+files, 437 contain no `#print axioms` line at all, and there are roughly 14931 declarations against
+roughly 9651 receipt lines. An earlier draft of this page claimed the coverage was total. It is
+not, and the claim was refuted by one command.
 
 - **A quantitative form of Lin's Theorem 3.3 on ℝ³.** For the scaled quantities `A` (velocity
   energy) and `D` (pressure), writing `X = A^{3/2} + D²`, there is an absolute `θ₀ ≤ 1/8` and a

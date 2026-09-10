@@ -74,8 +74,12 @@ is vector-valued in space-time, and our weak-gradient notion is the class's own.
    mollification API that mathlib does not currently have. Would that be welcome upstream, and in
    what form?
 3. Separately: the ℝ³ Calderón–Zygmund decomposition, weak (1,1) bound and Riesz operator we built
-   underneath this are general-purpose and appear to have no counterpart in mathlib. If that is
-   right, we would like to prepare them as contributions rather than leave them in a private tree.
+   underneath this have no counterpart in **mathlib** (measured: zero files for Calderón, Zygmund,
+   weak type, Riesz transform, maximal function). They are not without precedent in **Lean**,
+   however: `fpvandoorn/carleson` develops Calderón–Zygmund theory in the doubling metric measure
+   setting, and its `WeakCalderonZygmund` file carries no `sorry`. We have not yet measured how
+   much of our layer that subsumes once specialised to ℝ³, and that measurement should come before
+   we propose anything upstream. Pointers welcome.
 
 ## Reproducing
 
