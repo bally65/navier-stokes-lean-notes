@@ -17,7 +17,7 @@ authors:
 version: "0.1.0"
 date-released: "2026-09-10"
 license: MIT
-# repository-code: TO BE CONFIRMED — set to the public repository URL before release
+repository-code: "https://github.com/bally65/navier-stokes-lean-notes"
 abstract: >-
   Four documents from an ongoing Lean 4 / mathlib formalization of local
   regularity theory for the three-dimensional incompressible Navier-Stokes

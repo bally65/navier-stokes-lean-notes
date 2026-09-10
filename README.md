@@ -49,7 +49,7 @@ by anyone who knows the relevant mathlib.
 
 ## Contact
 
-Corrections are more useful to us than agreement, particularly on the open problem and on anything
-in the audit that does not reproduce.
+Open an issue. Corrections are more useful to us than agreement, particularly on the open problem
+and on anything in the audit that does not reproduce.
 
 No epsilon regularity, no partial regularity, no global smoothness, and no Clay conclusion.

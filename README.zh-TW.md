@@ -39,6 +39,6 @@ Clay 官方勘誤；信任基底裡沒有公理、沒有 `native_decide`、除�
 
 ## 聯絡
 
-對我們來說，糾正比同意有用，尤其是在開放問題上，以及稽核中任何無法重現的地方。
+請開 issue。對我們來說，糾正比同意有用，尤其是在開放問題上，以及稽核中任何無法重現的地方。
 
 No epsilon regularity, no partial regularity, no global smoothness, and no Clay conclusion.
