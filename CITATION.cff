@@ -11,9 +11,8 @@ authors:
   - family-names: "Li"
     given-names: "Wei-Ting"
     alias: "bally65"
-    # affiliation: TO BE CONFIRMED BY THE AUTHOR
-    # orcid: TO BE CONFIRMED BY THE AUTHOR
-    # email: TO BE CONFIRMED BY THE AUTHOR
+    affiliation: "Chaoyang University of Technology, Taichung, Taiwan"
+    orcid: "https://orcid.org/0009-0005-8891-330X"
 version: "0.1.0"
 date-released: "2026-09-10"
 license: MIT
