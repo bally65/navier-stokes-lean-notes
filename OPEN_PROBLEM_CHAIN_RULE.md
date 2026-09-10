@@ -52,13 +52,26 @@ vector field that is only known to have a weak gradient in the above sense.**
 
 ## Why it is not immediate here
 
-Measured on our tree (mathlib pinned in `lake-manifest.json`), with the commands in the repository:
+Measured on our tree (mathlib pinned in `lake-manifest.json`).
 
-| searched for | files in mathlib |
+**Correction, 2026-09-10.** An earlier version of this page said mathlib has no mollification,
+on the basis that `mollif` returns zero files. That was a search for a name rather than for the
+thing, and it was wrong. mathlib has the machinery under other names:
+
+| what exists | where |
+|---|---|
+| bump functions | `Analysis/Calculus/BumpFunction/` |
+| convolution, and its smoothness | `Analysis/Convolution.lean`, `HasCompactSupport.contDiff_convolution_right` |
+| convergence of mollifications | `convolution_tendsto_right_of_continuous`, `ae_convolution_tendsto_right_of_locallyIntegrable` |
+| continuous functions dense in `L^p` | `MeasureTheory/Function/ContinuousMapDense.lean` |
+
+What is still absent, searched this time by shape rather than by name: `L^p` convergence of
+mollifications, and any interaction between convolution and a **weak** derivative. Those are the
+two pieces the argument below would actually consume.
+
+| searched for, and absent | files in mathlib |
 |---|---|
 | `HasWeakDeriv`, `WeakDeriv`, `SobolevSpace`, `MemW` | 0 |
-| mollification (`mollif`) | 0 |
-| `ContDiffBump` | 8 |
 
 The one chain rule available to us is `sobolev_chain_rule` in the `DeGiorgi` dependency package,
 but it is stated for a **univariate** outer function `Φ : ℝ → ℝ` composed with a **scalar** Sobolev
